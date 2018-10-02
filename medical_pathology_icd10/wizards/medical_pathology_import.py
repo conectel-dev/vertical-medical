@@ -6,7 +6,9 @@ import logging
 
 from io import BytesIO
 from xml.etree import ElementTree
-from urllib2 import urlopen
+#  Remove this library because urllib2 change on python3
+#from urllib2 import urlopen
+from urllib.request import urlopen
 from zipfile import ZipFile
 
 from odoo import api, models
